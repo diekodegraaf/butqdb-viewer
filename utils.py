@@ -32,21 +32,3 @@ def sample_to_time(sample_idx):
     else:
         out =  f"{int(sample_idx // 3600000):02}:{int((sample_idx % 3600000) // 60000):02}:{int((sample_idx % 60000) // 1000):02}"
     return out
-
-def calc_c0_offset(lookup_table, record, annotator, sample_idx):
-    '''
-    NOTE: DOES NOT WORK YET
-    Calculates the offset for class0 exclusion in overview plots.
-    '''
-    # sample_idx = sample_num - 1
-    segments = lookup_table[record][annotator]
-    offset = 0
-    for (s, e, c) in segments:
-        if c == 0:
-            offset += e - s
-        else:
-            # if sample_idx is within a segment
-            if (e - offset) >= sample_idx:
-                print(e, offset, sample_idx)
-                return offset
-    return offset

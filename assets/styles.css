@@ -1,0 +1,164 @@
+/* Title Style */
+.title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Label Style */
+.label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Flex container to align dropdowns horizontally */
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;  /* Ensures dropdowns are spaced out properly */
+    align-items: center;  /* Vertically align dropdowns */
+    width: 100%;
+    margin-bottom: 20px; /* Optional: adds space between dropdowns and graphs */
+}
+
+/* Styling for the Dropdown container */
+.dash-dropdown {
+    width: 100%;  /* Ensures the dropdown takes full width of its container */
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Styling for the dropdown menu (the options list) */
+.Select-menu-outer {
+    max-height: 300px; /* Set max height for the dropdown menu */
+    overflow-y: auto;  /* Ensure scrolling if the menu is too long */
+}
+
+/* Adjusting the size of the dropdown items */
+.Select-option {
+    font-size: 16px;  /* Larger font size for the options */
+    padding: 10px;  /* More padding for the items */
+}
+
+/* Styling the active selected dropdown item */
+.Select-option.is-selected {
+    background-color: #007bff;
+    color: white;
+}
+/* Button Group Container */
+.btn-group-container {
+    display: inline-flex; /* Keep groups side by side */
+    background-color: #f8f9fa; /* Light background color for the container */
+    /* border: 2px solid #ccc; /* Outline for the group */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the container */
+    margin-right: 60px; /* Space between groups */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+}
+
+/* Button Group Styling */
+.btn-group {
+    display: inline-flex; /* Keep buttons in the group inline */
+}
+
+/* Buttons closer together within the group */
+.btn-group .button {
+    border-radius: 0; /* Remove individual button rounded corners */
+    margin: 5px; /* No gap between buttons */
+}
+
+/* First button in the group: rounded on the left */
+.btn-group .button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Last button in the group: rounded on the right */
+.btn-group .button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Button Styling */
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.c1 {
+    background-color: #28a745;
+}
+.c1:hover {
+    background-color: #218838;
+}
+
+.c2 { 
+    background-color: #ffc107;
+}
+
+.c2:hover {
+    background-color: #e0a800; /* Darker yellow for hover */
+}
+
+.c3 {
+    background-color: #dc3545; 
+}
+
+.c3:hover {
+    background-color: #c82333; /* Darker red for hover */
+}
+
+/* Segment Label Styling */
+.segment-label {
+    font-size: 18px;
+    color: #333;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+/* Graphs container (Flex Layout) */
+.graphs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Sticky button container styling */
+.sticky-buttons {
+    position: sticky;
+    top: 10px;
+    left: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.class-colours{
+    background-color: #28a745;
+    background-color: #ffc107;
+    background-color: #dc3545;}
